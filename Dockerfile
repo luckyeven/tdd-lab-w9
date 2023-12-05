@@ -1,6 +1,7 @@
 # pull official base image
 FROM python:3.11.2-slim-buster
 # set working directory
+RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
